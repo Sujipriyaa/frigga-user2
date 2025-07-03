@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;  /* Dark background */
+  color: #ffffff;             /* Light text */
+}
+
+input, textarea {
+  background-color: #1e1e1e;
+  color: white;
+  border: 1px solid #444;
+  padding: 8px;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+button {
+  background-color: #0d6efd;  /* Blue */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-right: 8px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background-color: #0b5ed7;
+}
+
+button:active {
+  transform: scale(0.97);
+  background-color: #0a58ca;
+}
+button {
+  box-shadow: 0 4px #0a58ca;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px #0a58ca;
+}
+button:active {
+  box-shadow: 0 0 10px 2px rgba(0, 136, 255, 0.7);
+}
+button {
+  background-color: #0d6efd;   /* Blue base */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-right: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  background-color: #0b5ed7;
+}
+
+button:active {
+  background-color: white;          /* ✅ White when clicked */
+  color: #0d6efd;                   /* ✅ Text turns blue */
+  box-shadow: 0 0 12px 2px white;   /* ✅ White glow */
+  transform: scale(0.96);
+}
+
+
+hr {
+  border: 1px solid #333;
+}
+
+nav a {
+  color: #0d6efd;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+bbody {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+
+  /* ✅ Use full background image */
+  background-image: url('https://images.unsplash.com/photo-1622482180441-7b54cf5237a2?auto=format&fit=crop&w=1470&q=80');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+
+  color: white;
+  min-height: 100vh;
+}
+
+/* ✅ Optional: Dark overlay for better contrast */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: hwb(0 3% 97%);
+  z-index: -1;
+}
+
